@@ -45,21 +45,22 @@
          HERO
     ═══════════════════════════════════════════ -->
     <section class="hero" id="hero">
-        <!-- Full-bleed parallax background -->
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1800&q=80&auto=format&fit=crop"
-                 alt="" class="hero-bg-img" id="heroBgImg" loading="eager">
+            <!-- Reliable Unsplash jewelry hero image -->
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=85&auto=format&fit=crop"
+                 alt="" class="hero-bg-img" id="heroBgImg" loading="eager"
+                 onerror="this.parentElement.style.background='linear-gradient(135deg,#1a160e 0%,#2a2118 100%)'">
             <div class="hero-overlay"></div>
         </div>
 
         <div class="hero-content" id="heroContent">
-            <p class="hero-eyebrow reveal">ANKARA · KIZILAY</p>
-            <h1 class="hero-title reveal">
+            <p class="hero-eyebrow">ANKARA · KIZILAY</p>
+            <h1 class="hero-title">
                 <span class="hero-title-line">Charme</span>
-                <em class="hero-title-italic reveal-delay">Accessories</em>
+                <em class="hero-title-italic">Accessories</em>
             </h1>
-            <p class="hero-sub reveal-delay2">Özgün tasarım. Zarif detaylar. Sonsuz şıklık.</p>
-            <a href="#gallery" class="hero-cta reveal-delay3">
+            <p class="hero-sub">Özgün tasarım. Zarif detaylar. Sonsuz şıklık.</p>
+            <a href="#gallery" class="hero-cta">
                 <span>Koleksiyonu Keşfet</span>
                 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -105,61 +106,54 @@
             </div>
         </div>
 
-        <!-- Masonry-style grid -->
         <div class="gallery-grid">
 
-            <!-- Card 1 – tall -->
+            <!-- Card 1 – tall: Gold necklace (very well known ID) -->
             <div class="gallery-card tall js-reveal">
-                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=900&q=80&auto=format&fit=crop"
-                     alt="Altın Kolye" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">Altın Koleksiyonu</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=900&q=85&auto=format&fit=crop"
+                     alt="Altın Kolye" loading="lazy" class="gallery-img"
+                     onerror="this.classList.add('img-error')">
+                <div class="card-overlay"><p class="card-label">Altın Koleksiyonu</p></div>
             </div>
 
-            <!-- Card 2 – normal -->
+            <!-- Card 2: Diamond earrings -->
             <div class="gallery-card js-reveal">
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=900&q=80&auto=format&fit=crop"
-                     alt="Küpe Koleksiyonu" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">Küpe Koleksiyonu</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=900&q=85&auto=format&fit=crop"
+                     alt="Küpe Koleksiyonu" loading="lazy" class="gallery-img"
+                     onerror="this.classList.add('img-error')">
+                <div class="card-overlay"><p class="card-label">Küpe Koleksiyonu</p></div>
             </div>
 
-            <!-- Card 3 – normal -->
+            <!-- Card 3: Bracelet stack (reliable ID) -->
             <div class="gallery-card js-reveal">
-                <img src="https://images.unsplash.com/photo-1573408301185-9519f94a64d9?w=900&q=80&auto=format&fit=crop"
-                     alt="Bilezik Serisi" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">Bilezik Serisi</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1602751584552-8ba74a1a06df?w=900&q=85&auto=format&fit=crop"
+                     alt="Bilezik Serisi" loading="lazy" class="gallery-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1573408301185-9519f94a64d9?w=900&q=85&auto=format&fit=crop'">
+                <div class="card-overlay"><p class="card-label">Bilezik Serisi</p></div>
             </div>
 
-            <!-- Card 4 – wide -->
+            <!-- Card 4 – wide: Ring on finger -->
             <div class="gallery-card wide js-reveal">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&q=80&auto=format&fit=crop"
-                     alt="Yüzük Serisi" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">Yüzük Serisi</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=85&auto=format&fit=crop"
+                     alt="Yüzük Serisi" loading="lazy" class="gallery-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&q=85&auto=format&fit=crop'">
+                <div class="card-overlay"><p class="card-label">Yüzük Serisi</p></div>
             </div>
 
-            <!-- Card 5 – normal -->
+            <!-- Card 5: Pearl necklace -->
             <div class="gallery-card js-reveal">
-                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900&q=80&auto=format&fit=crop"
-                     alt="İnci Koleksiyonu" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">İnci Koleksiyonu</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900&q=85&auto=format&fit=crop"
+                     alt="İnci Koleksiyonu" loading="lazy" class="gallery-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=900&q=85&auto=format&fit=crop'">
+                <div class="card-overlay"><p class="card-label">İnci Koleksiyonu</p></div>
             </div>
 
-            <!-- Card 6 – tall -->
+            <!-- Card 6 – tall: Charm / gold jewelry flat lay -->
             <div class="gallery-card tall js-reveal">
-                <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=900&q=80&auto=format&fit=crop"
-                     alt="Charm Koleksiyonu" loading="lazy" class="gallery-img">
-                <div class="card-overlay">
-                    <p class="card-label">Charm Koleksiyonu</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=900&q=85&auto=format&fit=crop"
+                     alt="Charm Koleksiyonu" loading="lazy" class="gallery-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=900&q=85&auto=format&fit=crop'">
+                <div class="card-overlay"><p class="card-label">Charm Koleksiyonu</p></div>
             </div>
 
         </div>
@@ -170,8 +164,9 @@
     ═══════════════════════════════════════════ -->
     <section class="logo-section">
         <div class="logo-section-bg">
-            <img src="https://images.unsplash.com/photo-1561913046-46ca25b4e2ea?w=1800&q=60&auto=format&fit=crop"
-                 alt="" class="logo-section-bg-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1561913046-46ca25b4e2ea?w=1800&q=65&auto=format&fit=crop"
+                 alt="" class="logo-section-bg-img" loading="lazy"
+                 onerror="this.parentElement.style.background='#0d0c0a'">
             <div class="logo-section-overlay"></div>
         </div>
         <div class="logo-section-content">
@@ -180,16 +175,13 @@
             <p class="logo-section-desc js-reveal">Kızılay, Ankara'nın kalbinde özgün tasarım aksesuarlarıyla buluşuyoruz.</p>
             <div class="logo-trio js-reveal">
                 <div class="logo-trio-item">
-                    <img src="assets/logo_main.png" alt="Ana Logo" loading="lazy"
-                         onerror="this.parentElement.style.display='none'">
+                    <img src="assets/logo_main.png" alt="Ana Logo" loading="lazy">
                 </div>
                 <div class="logo-trio-item">
-                    <img src="assets/logo_2.png" alt="Amblem" loading="lazy"
-                         onerror="this.parentElement.style.display='none'">
+                    <img src="assets/logo_2.png" alt="Amblem" loading="lazy">
                 </div>
                 <div class="logo-trio-item">
-                    <img src="assets/logo_3.png" alt="Simge" loading="lazy"
-                         onerror="this.parentElement.style.display='none'">
+                    <img src="assets/logo_3.png" alt="Simge" loading="lazy">
                 </div>
             </div>
         </div>
@@ -244,26 +236,38 @@
     </section>
 
     <!-- ═══════════════════════════════════════════
-         FOOTER
+         FOOTER  (logolar sağ alt köşede)
     ═══════════════════════════════════════════ -->
     <footer class="site-footer">
         <div class="footer-inner">
-            <div class="footer-logo-block">
-                <img src="assets/logo_main.png" alt="Charme Accessories"
-                     onerror="this.style.display='none'">
-                <p>Ankara · Kızılay</p>
+
+            <!-- Sol: marka adı + sosyal -->
+            <div class="footer-brand-col">
+                <p class="footer-brand-name">CHARME</p>
+                <p class="footer-location">Kızılay · Ankara</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-btn">
+                        <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.9 2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-btn">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7c4.78-.75 8.44-4.9 8.44-9.9 0-5.53-4.5-10.02-10-10.02z"/></svg>
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-social">
-                <a href="#" aria-label="Instagram" class="social-btn">
-                    <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.9 2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
-                </a>
-                <a href="#" aria-label="Facebook" class="social-btn">
-                    <svg viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7c4.78-.75 8.44-4.9 8.44-9.9 0-5.53-4.5-10.02-10-10.02z"/></svg>
-                </a>
-            </div>
-
+            <!-- Orta: copyright -->
             <p class="footer-copy">© 2026 Charme Accessories. Tüm Hakları Saklıdır.</p>
+
+            <!-- Sağ: 3 logo sağ alt köşe -->
+            <div class="footer-logos-col">
+                <img src="assets/logo_3.png" alt="Charme Simge" class="footer-logo-img"
+                     onerror="this.style.display='none'">
+                <img src="assets/logo_2.png" alt="Charme Amblem" class="footer-logo-img footer-logo-mid"
+                     onerror="this.style.display='none'">
+                <img src="assets/logo_main.png" alt="Charme Ana Logo" class="footer-logo-img footer-logo-main"
+                     onerror="this.style.display='none'">
+            </div>
+
         </div>
     </footer>
 
