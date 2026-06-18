@@ -41,12 +41,7 @@
                     </button>
                 </div>
                 
-                <button id="cartToggleBtn" class="cart-toggle-btn" aria-label="Sepeti Aç">
-                    <div class="cart-icon-wrapper">
-                        <svg class="icon" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                        <span class="cart-badge" id="cartBadge">0</span>
-                    </div>
-                </button>
+
 
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü">
                     <span></span>
@@ -120,8 +115,6 @@
                     <h3 class="filter-title">Sıralama</h3>
                     <select id="sortSelect" class="filter-select" aria-label="Sıralama seçin">
                         <option value="default">Önerilen</option>
-                        <option value="price-low">Fiyat: Düşükten Yükseğe</option>
-                        <option value="price-high">Fiyat: Yüksekten Düşüğe</option>
                         <option value="rating">Değerlendirme</option>
                     </select>
                 </div>
@@ -185,7 +178,7 @@
 
                 <div class="canvas-actions">
                     <button class="btn btn-secondary btn-sm" id="resetLookbookBtn">Temizle</button>
-                    <button class="btn btn-primary btn-sm" id="addLookbookToCartBtn">Kombini Sepete Ekle</button>
+                    <button class="btn btn-primary btn-sm" id="addLookbookToCartBtn">Kombin Bilgisi & Randevu Al</button>
                 </div>
             </div>
 
@@ -195,10 +188,7 @@
                 <div class="summary-list" id="lookbookSummaryList">
                     <p class="summary-empty-msg" id="lookbookEmptyMsg">Henüz bir aksesuar seçilmedi.</p>
                 </div>
-                <div class="summary-total" id="lookbookSummaryTotal" style="display: none;">
-                    <span>Kombin Toplamı:</span>
-                    <span class="total-price" id="lookbookTotalPrice">0.00 TL</span>
-                </div>
+
             </div>
         </div>
     </section>
@@ -223,7 +213,7 @@
                         </div>
                         <span class="modal-reviews-count" id="modalReviewsCount">(24 Yorum)</span>
                     </div>
-                    <div class="modal-price" id="modalPrice">0.00 TL</div>
+
                     <p class="modal-desc" id="modalDesc">Ürün detay açıklaması...</p>
                     
                     <div class="modal-meta-specs">
@@ -238,51 +228,18 @@
                     </div>
 
                     <div class="modal-buy-section">
-                        <div class="quantity-control">
-                            <button id="modalQtyMinus" class="qty-btn" aria-label="Azalt">-</button>
-                            <input type="number" id="modalQtyInput" value="1" min="1" max="99" aria-label="Miktar">
-                            <button id="modalQtyPlus" class="qty-btn" aria-label="Arttır">+</button>
-                        </div>
-                        <button class="btn btn-primary" id="modalAddToCartBtn">Sepete Ekle</button>
+                        <button class="btn btn-primary btn-block" id="modalAddToCartBtn">Showroom Randevusu Talebi</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Sliding Cart Drawer -->
-    <aside class="cart-drawer-overlay" id="cartDrawerOverlay">
-        <div class="cart-drawer" id="cartDrawer">
-            <div class="cart-drawer-header">
-                <h2>Alışveriş Sepeti (<span id="cartDrawerCount">0</span>)</h2>
-                <button class="cart-drawer-close" id="cartDrawerCloseBtn" aria-label="Sepeti Kapat">&times;</button>
-            </div>
-            
-            <div class="cart-drawer-items" id="cartDrawerItems">
-                <!-- Cart items will be loaded dynamically by app.js -->
-            </div>
 
-            <div class="cart-drawer-footer">
-                <div class="cart-summary-row">
-                    <span>Ara Toplam:</span>
-                    <span id="cartSubtotal">0.00 TL</span>
-                </div>
-                <div class="cart-summary-row">
-                    <span>Kargo:</span>
-                    <span class="text-gold">Ücretsiz</span>
-                </div>
-                <div class="cart-summary-total">
-                    <span>Toplam Fiyat:</span>
-                    <span id="cartTotal" class="text-gold">0.00 TL</span>
-                </div>
-                <button class="btn btn-primary btn-block" id="checkoutBtn">Siparişi Tamamla</button>
-            </div>
-        </div>
-    </aside>
 
     <!-- Checkout Success Notification -->
     <div class="toast-notification" id="toastNotification">
-        <span id="toastMsg">Siparişiniz başarıyla alındı!</span>
+        <span id="toastMsg">Talebiniz başarıyla iletildi!</span>
     </div>
 
     <!-- Contact & Store Location Section -->
