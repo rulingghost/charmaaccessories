@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charme Accessories | Zarafetin ve Işıltının Buluşma Noktası</title>
-    <meta name="description" content="Charme Accessories - Özel tasarım kolyeler, altın yüzükler, inci küpeler ve lüks bilezikler. Benzersiz sanal stilistimizle kombinlerinizi deneyin.">
+    <title>Charme Accessories | Showroom Tasarım & Sergi</title>
+    <meta name="description" content="Charme Accessories - Özel tasarım el yapımı kolyeler, yüzükler, küpeler ve bilezikler. Ankara Kızılay showroom randevu ve sergi sitesi.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,21 +28,13 @@
             
             <nav class="nav-menu" id="navMenu">
                 <a href="#hero" class="nav-link active">Ana Sayfa</a>
-                <a href="#catalog" class="nav-link">Koleksiyon</a>
-                <a href="#lookbook" class="nav-link">Sanal Stilist</a>
+                <a href="#collections" class="nav-link">Koleksiyonlar</a>
+                <a href="#showroom" class="nav-link">Showroom</a>
                 <a href="#contact" class="nav-link">İletişim</a>
             </nav>
 
             <div class="header-actions">
-                <div class="search-bar-wrapper">
-                    <input type="text" id="searchInput" placeholder="Aksesuar ara..." aria-label="Arama">
-                    <button id="searchBtn" class="action-btn" aria-label="Ara">
-                        <svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    </button>
-                </div>
-                
-
-
+                <a href="#contact" class="btn btn-secondary btn-sm" style="padding: 0.6rem 1.2rem;">Randevu Al</a>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü">
                     <span></span>
                     <span></span>
@@ -59,10 +51,10 @@
             <div class="hero-content">
                 <span class="hero-subtitle animated-text">LÜKS VE ESTETİK</span>
                 <h1 class="hero-title">Zarafetinizi<br><span class="accent-text">Taçlandırın</span></h1>
-                <p class="hero-desc">Özel tasarım mücevher ve aksesuarlarımızla stilinize ışıltı katın. Kendinizi şımartmanın en zarif yolu.</p>
+                <p class="hero-desc">Özel tasarım mücevher ve aksesuarlarımızla stilinize ışıltı katın. Ankara Kızılay butik showroomumuzda kendinizi şımartmanın en zarif yolu.</p>
                 <div class="hero-actions-btns">
-                    <a href="#catalog" class="btn btn-primary" id="heroExploreBtn">Koleksiyonu Keşfet</a>
-                    <a href="#lookbook" class="btn btn-secondary" id="heroLookbookBtn">Sanal Kombin</a>
+                    <a href="#collections" class="btn btn-primary" id="heroExploreBtn">Koleksiyonu Keşfet</a>
+                    <a href="#contact" class="btn btn-secondary" id="heroLookbookBtn">Randevu Talebi</a>
                 </div>
             </div>
             
@@ -87,166 +79,96 @@
         </div>
     </section>
 
-    <!-- Catalog Section -->
-    <section class="catalog-section" id="catalog">
+    <!-- Collections Section -->
+    <section class="catalog-section" id="collections">
         <div class="section-header">
-            <h2 class="section-title">Özel Koleksiyonumuz</h2>
+            <h2 class="section-title">Koleksiyonlarımız</h2>
             <div class="section-line"></div>
-            <p class="section-desc">Her detayında asalet barındıran el yapımı aksesuarları keşfedin.</p>
+            <p class="section-desc">Her detayında asalet barındıran el yapımı aksesuar serilerimizi keşfedin.</p>
         </div>
 
-        <div class="catalog-container">
-            <!-- Sidebar Filters -->
-            <aside class="catalog-filters" id="catalogFilters">
-                <div class="filter-group">
-                    <h3 class="filter-title">Kategoriler</h3>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-category="all" id="filterCatAll">Tümü</button>
-                        <button class="filter-btn" data-category="necklace" id="filterCatNecklace">Kolyeler</button>
-                        <button class="filter-btn" data-category="ring" id="filterCatRing">Yüzükler</button>
-                        <button class="filter-btn" data-category="earrings" id="filterCatEarrings">Küpeler</button>
-                        <button class="filter-btn" data-category="bracelet" id="filterCatBracelet">Bilezikler</button>
+        <div class="collections-grid-wrapper">
+            <div class="collections-grid" id="collectionsGrid">
+                <!-- Necklace Card -->
+                <div class="collection-item-card animate-fade-in">
+                    <div class="collection-img-wrapper">
+                        <img src="assets/images/necklace_gold.png" alt="Kolye Koleksiyonu" class="collection-item-img">
+                    </div>
+                    <div class="collection-item-info">
+                        <span class="collection-item-tag">Gold Series</span>
+                        <h3 class="collection-item-title">Kolyeler</h3>
+                        <p class="collection-item-desc">Zarif geometrik çizgilerle 24 Ayar altın kaplama olarak hazırlanan zincir tasarımları.</p>
+                        <button class="btn btn-secondary btn-sm btn-block collection-inquire-btn" data-item="Kolyeler">Showroomda İncele</button>
                     </div>
                 </div>
 
-
-
-                <div class="filter-group">
-                    <h3 class="filter-title">Sıralama</h3>
-                    <select id="sortSelect" class="filter-select" aria-label="Sıralama seçin">
-                        <option value="default">Önerilen</option>
-                        <option value="rating">Değerlendirme</option>
-                    </select>
-                </div>
-            </aside>
-
-            <!-- Product Grid -->
-            <main class="product-grid-wrapper">
-                <div class="product-grid" id="productGrid">
-                    <!-- Products will be generated dynamically by app.js -->
-                </div>
-                <div class="no-products-msg" id="noProductsMsg" style="display: none;">
-                    <svg viewBox="0 0 24 24" class="no-results-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <h3>Ürün Bulunamadı</h3>
-                    <p>Arama kriterlerinize uygun aksesuar bulunmamaktadır. Lütfen filtrelerinizi kontrol edin.</p>
-                </div>
-            </main>
-        </div>
-    </section>
-
-    <!-- Mix & Match Lookbook (Try-On) Section -->
-    <section class="lookbook-section" id="lookbook">
-        <div class="lookbook-glow-bg"></div>
-        <div class="section-header">
-            <h2 class="section-title">Sanal Stilist & Kombin Tasarımcısı</h2>
-            <div class="section-line"></div>
-            <p class="section-desc">Koleksiyonumuzdaki aksesuarları modelimiz üzerinde deneyin, kendi lüks stilinizi oluşturun.</p>
-        </div>
-
-        <div class="lookbook-container">
-            <!-- Canvas Wardrobe -->
-            <div class="lookbook-panel lookbook-wardrobe">
-                <h3 class="panel-title">Stil Gardırobu</h3>
-                <p class="panel-desc">Model üzerinde denemek istediğiniz aksesuara tıklayın:</p>
-                
-                <div class="wardrobe-tabs">
-                    <button class="wardrobe-tab-btn active" data-tab="necklaces" id="tabNecklaces">Kolyeler</button>
-                    <button class="wardrobe-tab-btn" data-tab="earrings" id="tabEarrings">Küpeler</button>
-                    <button class="wardrobe-tab-btn" data-tab="bracelets" id="tabBracelets">Bilezikler & Yüzükler</button>
+                <!-- Ring Card -->
+                <div class="collection-item-card animate-fade-in">
+                    <div class="collection-img-wrapper">
+                        <img src="assets/images/ring_emerald.png" alt="Yüzük Koleksiyonu" class="collection-item-img">
+                    </div>
+                    <div class="collection-item-info">
+                        <span class="collection-item-tag">Luxury Stones</span>
+                        <h3 class="collection-item-title">Yüzükler</h3>
+                        <p class="collection-item-desc">Zümrüt kesimler ve etrafını süsleyen özel pırlanta detaylarıyla şıklığın zarafeti.</p>
+                        <button class="btn btn-secondary btn-sm btn-block collection-inquire-btn" data-item="Yüzükler">Showroomda İncele</button>
+                    </div>
                 </div>
 
-                <div class="wardrobe-items-grid" id="wardrobeGrid">
-                    <!-- Wardrobe items generated dynamically by app.js -->
-                </div>
-            </div>
-
-            <!-- Canvas Try-On Area -->
-            <div class="lookbook-panel lookbook-preview-area">
-                <div class="canvas-wrapper">
-                    <!-- The Base Model Image -->
-                    <img src="assets/images/model_lookbook.png" alt="Model Silhouette" class="lookbook-model-base" id="lookbookModelBase">
-                    
-                    <!-- Overlay Jewel Layers -->
-                    <div class="jewel-overlay-layer necklace-overlay" id="overlayNecklace"></div>
-                    <div class="jewel-overlay-layer earrings-overlay" id="overlayEarrings"></div>
-                    <div class="jewel-overlay-layer bracelet-overlay" id="overlayBracelet"></div>
-                    <div class="jewel-overlay-layer ring-overlay" id="overlayRing"></div>
-
-                    <!-- Ambient lighting effects on the model -->
-                    <div class="canvas-ambient-glow" id="canvasGlow"></div>
+                <!-- Earrings Card -->
+                <div class="collection-item-card animate-fade-in">
+                    <div class="collection-img-wrapper">
+                        <img src="assets/images/earrings_pearl.png" alt="Küpe Koleksiyonu" class="collection-item-img">
+                    </div>
+                    <div class="collection-item-info">
+                        <span class="collection-item-tag">Freshwater Pearls</span>
+                        <h3 class="collection-item-title">Küpeler</h3>
+                        <p class="collection-item-desc">Gerçek tatlı su incileriyle el işçiliği olarak tasarlanmış klasik halka modeller.</p>
+                        <button class="btn btn-secondary btn-sm btn-block collection-inquire-btn" data-item="Küpeler">Showroomda İncele</button>
+                    </div>
                 </div>
 
-                <div class="canvas-actions">
-                    <button class="btn btn-secondary btn-sm" id="resetLookbookBtn">Temizle</button>
-                    <button class="btn btn-primary btn-sm" id="addLookbookToCartBtn">Kombin Bilgisi & Randevu Al</button>
+                <!-- Bracelet Card -->
+                <div class="collection-item-card animate-fade-in">
+                    <div class="collection-img-wrapper">
+                        <img src="assets/images/bracelet_gold.png" alt="Bilezik Koleksiyonu" class="collection-item-img">
+                    </div>
+                    <div class="collection-item-info">
+                        <span class="collection-item-tag">Bangle Designs</span>
+                        <h3 class="collection-item-title">Bilezikler</h3>
+                        <p class="collection-item-desc">Geometrik oyma desenleri ve kalın yapısıyla tarzınızda iddialı ve seçkin bir görünüm.</p>
+                        <button class="btn btn-secondary btn-sm btn-block collection-inquire-btn" data-item="Bilezikler">Showroomda İncele</button>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Stylist Summary -->
-            <div class="lookbook-panel lookbook-summary">
-                <h3 class="panel-title">Kombin Detayları</h3>
-                <div class="summary-list" id="lookbookSummaryList">
-                    <p class="summary-empty-msg" id="lookbookEmptyMsg">Henüz bir aksesuar seçilmedi.</p>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Product Detail Modal -->
-    <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true">
-        <div class="modal-content">
-            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Kapat">&times;</button>
-            <div class="modal-body">
-                <div class="modal-gallery">
-                    <div class="modal-image-wrapper">
-                        <img src="" alt="Ürün Detay Resmi" class="modal-main-img" id="modalMainImg">
-                        <div class="modal-img-glow"></div>
-                    </div>
-                </div>
-                <div class="modal-info">
-                    <span class="modal-category" id="modalCategory">Kategori</span>
-                    <h2 class="modal-title" id="modalTitle">Ürün Adı</h2>
-                    <div class="modal-rating-row">
-                        <div class="stars-rating" id="modalStars">
-                            <!-- SVG stars dynamically inserted -->
-                        </div>
-                        <span class="modal-reviews-count" id="modalReviewsCount">(24 Yorum)</span>
-                    </div>
-
-                    <p class="modal-desc" id="modalDesc">Ürün detay açıklaması...</p>
-                    
-                    <div class="modal-meta-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Garanti:</span>
-                            <span class="spec-value">2 Yıl Uluslararası</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Kargo:</span>
-                            <span class="spec-value text-gold">Ücretsiz Kargo</span>
-                        </div>
-                    </div>
-
-                    <div class="modal-buy-section">
-                        <button class="btn btn-primary btn-block" id="modalAddToCartBtn">Showroom Randevusu Talebi</button>
-                    </div>
+    <!-- Showroom & Design Philosophy -->
+    <section class="showroom-section" id="showroom">
+        <div class="showroom-glow-bg"></div>
+        <div class="showroom-container">
+            <div class="showroom-visual">
+                <div class="showroom-img-stack">
+                    <img src="assets/images/model_lookbook.png" alt="Model Silhouette" class="showroom-stack-img model-stack">
                 </div>
             </div>
+            <div class="showroom-content">
+                <span class="showroom-subtitle">TASARIM FELSEFEMİZ</span>
+                <h2 class="showroom-title">Size Özel Bir Deneyim</h2>
+                <div class="section-line" style="margin: 0 0 2rem 0;"></div>
+                <p class="showroom-desc-text">Charme Accessories olarak, seri üretimden uzak, her parçasında el işçiliğinin asaletini barındıran benzersiz aksesuarlar tasarlıyoruz. Amacımız sadece süslemek değil, taşıyan kişinin karakterini ve zarafetini ortaya çıkarmaktır.</p>
+                <p class="showroom-desc-text">Ankara Kızılay showroomumuzda sizleri ağırlayarak kişiye özel stil ve tasarım randevuları organize ediyoruz. Koleksiyonumuzdaki tasarımları yakından görmek ve kendi kombinlerinizi uzman stilistlerimiz eşliğinde yaratmak için randevu oluşturabilirsiniz.</p>
+                <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Ziyaret Randevusu Al</a>
+            </div>
         </div>
-    </div>
-
-
-
-    <!-- Checkout Success Notification -->
-    <div class="toast-notification" id="toastNotification">
-        <span id="toastMsg">Talebiniz başarıyla iletildi!</span>
-    </div>
+    </section>
 
     <!-- Contact & Store Location Section -->
     <section class="contact-section" id="contact">
         <div class="contact-container">
             <div class="contact-info-block">
-                <span class="contact-tag">İletişim & Randevu</span>
+                <span class="contact-tag">Showroom Ziyareti</span>
                 <h2 class="contact-title">Bizi Ziyaret Edin</h2>
                 <p class="contact-desc">Butik showroomumuzda özel tasarım aksesuarlarımızı yakından incelemek için randevu alabilirsiniz.</p>
                 
@@ -254,7 +176,7 @@
                     <div class="contact-detail-item">
                         <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                         <div>
-                            <h4>Adres</h4>
+                            <h4>Showroom Adresi</h4>
                             <p>Kızılay Showroom, Atatürk Blv. No:122, Çankaya / Ankara</p>
                         </div>
                     </div>
@@ -262,24 +184,24 @@
                     <div class="contact-detail-item">
                         <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                         <div>
-                            <h4>Telefon</h4>
-                            <p>+90 (212) 555 44 33</p>
+                            <h4>Randevu & Telefon</h4>
+                            <p>+90 (312) 444 55 66</p>
                         </div>
                     </div>
 
                     <div class="contact-detail-item">
                         <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                         <div>
-                            <h4>E-posta</h4>
+                            <h4>E-posta Adresi</h4>
                             <p>info@charmeaccessories.com</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Beautiful Contact Form -->
+            <!-- Contact Form -->
             <div class="contact-form-block">
-                <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('toastMsg').innerText = 'Mesajınız gönderildi, en kısa sürede iletişime geçeceğiz!'; document.getElementById('toastNotification').classList.add('show'); setTimeout(() => document.getElementById('toastNotification').classList.remove('show'), 3000); this.reset();">
+                <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('toastMsg').innerText = 'Randevu talebiniz showroom stilistimize iletildi!'; document.getElementById('toastNotification').classList.add('show'); setTimeout(() => document.getElementById('toastNotification').classList.remove('show'), 3000); this.reset();">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="formName">Adınız Soyadınız</label>
@@ -294,11 +216,11 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="formMsg">Mesajınız / Randevu Talebiniz</label>
-                            <textarea id="formMsg" rows="4" required placeholder="Aksesuar tasarımlarımız veya showroom ziyareti hakkında mesajınız..."></textarea>
+                            <label for="formMsg">Mesajınız / İncelemek İstediğiniz Koleksiyon</label>
+                            <textarea id="formMsg" rows="4" required placeholder="Kızılay showroom ziyareti ve incelemek istediğiniz aksesuarlar hakkında mesajınız..."></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">Mesaj Gönder</button>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">Randevu Talebi Gönder</button>
                 </form>
             </div>
         </div>
@@ -324,13 +246,12 @@
             </div>
             
             <div class="footer-links">
-                <h4>Koleksiyon</h4>
+                <h4>Koleksiyonlar</h4>
                 <ul>
-                    <li><a href="#catalog">Tüm Koleksiyon</a></li>
-                    <li><a href="#catalog">Altın Kolyeler</a></li>
-                    <li><a href="#catalog">Gümüş Yüzükler</a></li>
-                    <li><a href="#catalog">İnci Küpeler</a></li>
-                    <li><a href="#catalog">Özel Seri Bilezikler</a></li>
+                    <li><a href="#collections">Kolye Serileri</a></li>
+                    <li><a href="#collections">Özel Yüzükler</a></li>
+                    <li><a href="#collections">İnci Küpeler</a></li>
+                    <li><a href="#collections">Tasarım Bilezikler</a></li>
                 </ul>
             </div>
 
@@ -338,10 +259,9 @@
                 <h4>Kurumsal</h4>
                 <ul>
                     <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="#">Showroom</a></li>
-                    <li><a href="#">Tasarım Sürecimiz</a></li>
-                    <li><a href="#">Sürdürülebilirlik</a></li>
-                    <li><a href="#">İş Birlikleri</a></li>
+                    <li><a href="#showroom">Showroom</a></li>
+                    <li><a href="#showroom">Tasarım Sürecimiz</a></li>
+                    <li><a href="#">Showroom Ziyaretleri</a></li>
                 </ul>
             </div>
 
@@ -359,11 +279,15 @@
             <p>&copy; 2026 Charme Accessories. Tüm Hakları Saklıdır.</p>
             <div class="footer-bottom-links">
                 <a href="#">Gizlilik Politikası</a>
-                <a href="#">Mesafeli Satış Sözleşmesi</a>
                 <a href="#">Kullanım Koşulları</a>
             </div>
         </div>
     </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <span id="toastMsg">Talebiniz başarıyla iletildi!</span>
+    </div>
 
     <!-- App Logic -->
     <script src="app.js"></script>
