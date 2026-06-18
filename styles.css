@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------
-   CHARME ACCESSORIES - FLAT LUXURY BROCHURE STYLE SHEET
+   CHARME ACCESSORIES - BRAND SHOWCASE STYLE SHEET
    -------------------------------------------------------------------------- */
 
 /* CSS Variables - Modern Light Theme */
@@ -198,10 +198,11 @@ button {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: var(--transition-smooth);
+    padding: 0.8rem 0;
 }
 
 .main-header.scrolled {
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     background: rgba(251, 251, 250, 0.96);
     border-bottom: 1px solid var(--color-glass-border);
 }
@@ -209,7 +210,7 @@ button {
 .header-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,9 +223,14 @@ button {
 }
 
 .brand-logo {
-    height: 40px;
+    height: 75px; /* Larger logo size */
     width: auto;
     object-fit: contain;
+    transition: var(--transition-smooth);
+}
+
+.main-header.scrolled .brand-logo {
+    height: 55px; /* Shrinks eleganty on scroll */
 }
 
 .brand-text-fallback {
@@ -413,10 +419,10 @@ button {
 }
 
 .hero-image {
-    width: 75%;
+    width: 70%;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.05));
     transition: var(--transition-smooth);
 }
 
@@ -565,7 +571,7 @@ section {
 .collection-item-card {
     background: var(--bg-card);
     border: 1px solid var(--color-glass-border);
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -585,7 +591,7 @@ section {
 .collection-img-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1.2;
     background: rgba(0, 0, 0, 0.005);
     display: flex;
     align-items: center;
@@ -599,11 +605,11 @@ section {
     height: auto;
     object-fit: contain;
     transition: var(--transition-smooth);
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
 }
 
 .collection-item-card:hover .collection-item-img {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .collection-item-info {
@@ -612,10 +618,11 @@ section {
 }
 
 .collection-item-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--color-champagne);
     font-family: var(--font-heading);
     margin-top: 0.5rem;
+    font-weight: 600;
 }
 
 /* Toast Notification */
@@ -648,7 +655,7 @@ section {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5rem;
     align-items: center;
 }
@@ -674,7 +681,9 @@ section {
 
 .contact-details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -702,48 +711,6 @@ section {
     color: var(--color-text-muted);
 }
 
-/* Contact Form */
-.contact-form-block {
-    background: var(--bg-card);
-    border: 1px solid var(--color-glass-border);
-    padding: 3rem;
-    box-shadow: var(--shadow-gold);
-}
-
-.form-row {
-    margin-bottom: 1.8rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-}
-
-.form-group label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--color-gold);
-    letter-spacing: 0.05em;
-}
-
-.form-group input, .form-group textarea {
-    background: rgba(0, 0, 0, 0.01);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 0.9rem;
-    color: var(--color-text-main);
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    outline: none;
-    transition: var(--transition-smooth);
-}
-
-.form-group input:focus, .form-group textarea:focus {
-    border-color: var(--color-gold);
-    background: rgba(0, 0, 0, 0.02);
-}
-
 /* Footer Section */
 .main-footer {
     background: #f4f3f0; /* Slightly darker cream for footer context */
@@ -755,7 +722,7 @@ section {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
     gap: 4rem;
     margin-bottom: 4rem;
 }
@@ -869,10 +836,11 @@ section {
 /* Responsive Breakpoints */
 @media (max-width: 1200px) {
     .footer-container {
-        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
     .footer-newsletter {
-        grid-column: span 3;
+        grid-column: span 1;
     }
 }
 
@@ -898,6 +866,16 @@ section {
     .contact-container {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand-logo {
+        height: 60px; /* Responsive logo constraint */
+    }
+    .main-header.scrolled .brand-logo {
+        height: 48px;
     }
 }
 
@@ -932,12 +910,6 @@ section {
     }
     .mobile-menu-toggle {
         display: flex;
-    }
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-    .footer-newsletter {
-        grid-column: span 1;
     }
     .footer-bottom {
         flex-direction: column;

@@ -1,5 +1,5 @@
 // ==========================================================================
-// CHARME ACCESSORIES - APPLICATION SCRIPT (Flat brochure edition)
+// CHARME ACCESSORIES - APPLICATION SCRIPT (Flat brand showcase edition)
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,7 +51,6 @@ function initHeaderScroll() {
     });
 }
 
-// Mobile Menu toggler
 function initMobileMenu() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navMenu = document.getElementById('navMenu');
