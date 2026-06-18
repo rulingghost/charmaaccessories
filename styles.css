@@ -766,6 +766,7 @@ body.is-hovering .cursor-ring { width:58px; height:58px; border-color:var(--gold
     .logo-img { height: 48px; }
     .site-header.scrolled .logo-img { height: 36px; }
     .header-inner { padding: 0 1.2rem; }
+    .logo-link { margin-left: 1rem; }
 
     /* ── Mobile Nav Drawer ── */
     .nav {
