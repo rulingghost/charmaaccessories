@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------
-   CHARME ACCESSORIES - LUXURY SHOWROOM STYLE SHEET
+   CHARME ACCESSORIES - FLAT LUXURY BROCHURE STYLE SHEET
    -------------------------------------------------------------------------- */
 
 /* CSS Variables - Modern Light Theme */
@@ -568,6 +568,8 @@ section {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -607,99 +609,13 @@ section {
 .collection-item-info {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-}
-
-.collection-item-tag {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: var(--color-gold);
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.4rem;
 }
 
 .collection-item-title {
     font-size: 1.4rem;
     color: var(--color-champagne);
-    margin-bottom: 0.8rem;
     font-family: var(--font-heading);
-}
-
-.collection-item-desc {
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    margin-bottom: 1.8rem;
-    line-height: 1.6;
-    flex-grow: 1;
-}
-
-/* Showroom Section */
-.showroom-section {
-    position: relative;
-    background: #faf9f6;
-    overflow: hidden;
-}
-
-.showroom-glow-bg {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(166, 124, 51, 0.03) 0%, rgba(251, 251, 250, 0) 70%);
-    bottom: -10%;
-    right: -10%;
-    filter: blur(60px);
-    z-index: 0;
-}
-
-.showroom-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 6rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.showroom-img-stack {
-    position: relative;
-    width: 100%;
-    max-width: 420px;
-    aspect-ratio: 0.85;
-    background: #060608;
-    border: 1px solid var(--color-glass-border);
-    box-shadow: var(--shadow-gold-heavy);
-    overflow: hidden;
-}
-
-.showroom-stack-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: normal;
-}
-
-.showroom-subtitle {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--color-gold);
-    letter-spacing: 0.25em;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.showroom-title {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-}
-
-.showroom-desc-text {
-    font-size: 0.95rem;
-    color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
+    margin-top: 0.5rem;
 }
 
 /* Toast Notification */
@@ -977,14 +893,6 @@ section {
     }
     .floating-card-wrapper {
         max-width: 400px;
-        margin: 0 auto;
-    }
-    .showroom-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-    .showroom-img-stack {
         margin: 0 auto;
     }
     .contact-container {

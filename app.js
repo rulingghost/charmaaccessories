@@ -1,12 +1,11 @@
 // ==========================================================================
-// CHARME ACCESSORIES - APPLICATION SCRIPT (Showroom static brochure edition)
+// CHARME ACCESSORIES - APPLICATION SCRIPT (Flat brochure edition)
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
     initCursor();
     initHeaderScroll();
     initMobileMenu();
-    initInquiryActions();
     initSmoothScroll();
 });
 
@@ -52,6 +51,7 @@ function initHeaderScroll() {
     });
 }
 
+// Mobile Menu toggler
 function initMobileMenu() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navMenu = document.getElementById('navMenu');
@@ -72,27 +72,7 @@ function initMobileMenu() {
     }
 }
 
-// 3. SHOWROOM INQUIRY REDIRECTS
-function initInquiryActions() {
-    const inquireBtns = document.querySelectorAll('.collection-inquire-btn');
-    const msgInput = document.getElementById('formMsg');
-    const contactSection = document.getElementById('contact');
-
-    inquireBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const itemName = btn.getAttribute('data-item');
-            if (msgInput && contactSection) {
-                msgInput.value = `Merhaba, Kızılay showroomunuzda sergilenen "${itemName}" koleksiyonunu yakından incelemek ve ziyaret randevusu oluşturmak istiyorum.`;
-                
-                // Scroll smoothly to contact form
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-                showToast('Koleksiyon detayı randevu formuna aktarıldı.');
-            }
-        });
-    });
-}
-
-// 4. SMOOTH SCROLL FOR NAV MENU LINKS
+// 3. SMOOTH SCROLL FOR NAV MENU LINKS
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -114,20 +94,4 @@ function initSmoothScroll() {
             }
         });
     });
-}
-
-// 5. TOAST NOTIFICATION
-function showToast(message) {
-    const toast = document.getElementById('toastNotification');
-    const toastMsg = document.getElementById('toastMsg');
-    
-    if (!toast || !toastMsg) return;
-
-    toastMsg.innerText = message;
-    toast.classList.add('show');
-
-    // Auto clear
-    setTimeout(() => {
-        toast.classList.remove('show');
-    }, 3000);
 }
